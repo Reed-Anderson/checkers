@@ -156,3 +156,17 @@ function applyMove(move) {
   // TODO: Check for victory
   // TODO: Start the next turn
 }
+
+function renderToConsole() {
+  state.board.forEach((row, i) => {
+    var rowString = i + '.   '
+    row.forEach(square => {
+      if (square == null) {
+        rowString += '* '
+      } else {
+        rowString += square + ' '
+      }
+    })
+    console.log(rowString)
+  })
+}
