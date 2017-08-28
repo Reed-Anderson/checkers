@@ -157,6 +157,10 @@ function applyMove(move) {
   // TODO: Start the next turn
 }
 
+/**
+ * @function RenderToConsole
+ * a function to render the state of the board to the developer console
+ */
 function renderToConsole() {
   state.board.forEach((row, i) => {
     var rowString = i + '.   '
